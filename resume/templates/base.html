@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block page_title %}Hazel Court{% endblock %}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   {% block css %}{% endblock %}
 
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top">
-  <ul class="nav navbar-nav nav-pills">
-    <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
-    <li><a href="https://github.com/hcourt/resume">Source</a></li>
-  </ul>
-</nav>
-
-<div class="content-container">
+<div class="navbar-container container-fluid">
+  <nav class="navbar navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+      <li class="hover-hidden"><a href="https://github.com/hcourt/resume">Source</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="content-container container-fluid">
   {% block content %}{% endblock %}
 </div>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
