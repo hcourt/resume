@@ -13,7 +13,7 @@ def home():
         key=lambda page: page.meta['date'])
     return render_template('index.html', pages=sorted_posts)
 
-@app.route('/download')
+@app.route('/resume.pdf')
 def download():
     """Download pdf copy of resume.
 
