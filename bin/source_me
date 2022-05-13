@@ -1,7 +1,0 @@
-#!/bin/sh
-
-PROJECT_ROOT=~/git/resume
-
-virtualenv --setuptools env
-. ${PROJECT_ROOT}/env/bin/activate
-pip install -q -r requirements.txt

@@ -1,4 +1,0 @@
-Flask
-flask-flatpages
-Frozen-Flask
-pyyaml>=3.11

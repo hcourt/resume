@@ -1,9 +1,0 @@
-#!/bin/sh
-
-python freeze.py
-if [[ "$?" != "0" ]]; then
-    echo 'freeze failed'
-    exit 0
-fi
-git add .
-git commit -m 'freeze'
