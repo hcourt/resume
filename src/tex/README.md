@@ -16,3 +16,9 @@ View the [PDF](https://raw.githubusercontent.com/hcourt/resume/master/resume.pdf
 ```
 > xelatex resume.tex
 ```
+
+4. To view:
+
+```
+> open resume.pdf
+```
